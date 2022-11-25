@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function Profile({
   imageUrl,
   user,
@@ -39,3 +41,13 @@ export default function Profile({
     </div>
   );
 }
+
+Profile.propTypes = {
+  imageUrl: PropTypes.string.isRequired,
+  user: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
+};
