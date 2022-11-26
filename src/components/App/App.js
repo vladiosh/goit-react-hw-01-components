@@ -1,10 +1,10 @@
-import Profile from './Profile/Profile';
-import user from '../user';
-import css from './App.module.css';
+import Profile from '../Profile/Profile';
+import user from '../../user';
+import { Container } from './App.styled';
 
 export default function App() {
   return (
-    <div className={css.app}>
+    <Container>
       <Profile
         imageUrl={user.avatar}
         user={user.username}
@@ -15,6 +15,6 @@ export default function App() {
         likes={user.stats.likes}
       />
       ;
-    </div>
+    </Container>
   );
 }

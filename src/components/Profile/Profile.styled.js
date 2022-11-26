@@ -1,4 +1,6 @@
-.profile {
+import styled from '@emotion/styled';
+
+export const Card = styled.div`
   background-color: white;
   margin-left: auto;
   margin-right: auto;
@@ -7,21 +9,21 @@
   border-radius: 10px;
   box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
     rgb(0 0 0 / 30%) 0px 1px 3px -1px;
-}
+`;
 
-.description {
+export const Description = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-top: 35px;
   padding-bottom: 35px;
-}
+`;
 
-.avatar {
+export const UserPhoto = styled.img`
   margin-bottom: 10px;
-}
+`;
 
-.name {
+export const UserName = styled.p`
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -29,9 +31,9 @@
   color: rgb(0, 0, 0);
   margin: 0;
   margin-bottom: 5px;
-}
+`;
 
-.tag {
+export const UserTag = styled.p`
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 200;
@@ -39,51 +41,50 @@
   color: rgb(88, 85, 85);
   margin: 0;
   margin-bottom: 5px;
-}
+`;
 
-.location {
+export const UserLocation = styled.p`
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 200;
   line-height: 1.125;
   color: rgb(88, 85, 85);
   margin: 0;
-}
+`;
 
-.statsList {
+export const StatsList = styled.ul`
   list-style: none;
   display: flex;
   justify-content: center;
   border-top: 1px solid rgb(183, 174, 174);
   background: rgba(177, 212, 215, 0.52);
-}
+`;
 
-.sats {
+export const Stats = styled.li`
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100px;
   padding-top: 14px;
   padding-bottom: 14px;
-}
+  &:not(:last-child) {
+    border-right: 1px solid rgb(183, 174, 174);
+  }
+`;
 
-.sats:not(:last-child) {
-  border-right: 1px solid rgb(183, 174, 174);
-}
-
-.label {
+export const Label = styled.span`
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 200;
   line-height: 1.125;
   color: rgb(88, 85, 85);
   margin: 0;
-}
+`;
 
-.quantity {
+export const Quantity = styled.span`
   font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.5;
   color: rgb(0, 0, 0);
-}
+`;
