@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const Card = styled.div`
   background-color: white;
@@ -24,9 +24,9 @@ export const UserPhoto = styled.img`
 `;
 
 export const UserName = styled.p`
-  font-family: ${props => props.theme.fonts.body};
+  font-family: ${props => props.theme.fonts.heading};
   font-size: ${props => props.theme.fontSizes.l};
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.125;
   color: rgb(0, 0, 0);
   margin: 0;
