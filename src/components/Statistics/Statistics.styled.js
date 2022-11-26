@@ -9,3 +9,11 @@ font-family:${props => props.theme.fonts.heading};
     margin-bottom: 32px;
     text-transform: uppercase;
 }`;
+
+export const List = styled.ul`
+  display: flex;
+`;
+
+export const Item = styled.li`
+  display: flex;
+`;

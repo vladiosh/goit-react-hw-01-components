@@ -26,7 +26,7 @@ export const UserPhoto = styled.img`
 export const UserName = styled.p`
   font-family: ${props => props.theme.fonts.heading};
   font-size: ${props => props.theme.fontSizes.l};
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.125;
   color: rgb(0, 0, 0);
   margin: 0;
