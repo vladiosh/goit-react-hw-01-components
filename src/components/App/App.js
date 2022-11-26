@@ -1,5 +1,5 @@
 import Profile from '../Profile/Profile';
-import user from '../../user';
+import user from '../../data/user.json';
 import { Container } from './App.styled';
 
 export default function App() {

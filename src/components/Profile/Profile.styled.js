@@ -24,8 +24,8 @@ export const UserPhoto = styled.img`
 `;
 
 export const UserName = styled.p`
-  font-family: 'Roboto', sans-serif;
-  font-size: 24px;
+  font-family: ${props => props.theme.fonts.body};
+  font-size: ${props => props.theme.fontSizes.l};
   font-weight: 500;
   line-height: 1.125;
   color: rgb(0, 0, 0);
@@ -35,20 +35,20 @@ export const UserName = styled.p`
 
 export const UserTag = styled.p`
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: ${props => props.theme.fontSizes.m};
   font-weight: 200;
   line-height: 1.125;
-  color: rgb(88, 85, 85);
+  color: ${props => props.theme.colors.darkGrey};
   margin: 0;
   margin-bottom: 5px;
 `;
 
 export const UserLocation = styled.p`
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 200;
+  font-family: ${props => props.theme.fonts.body};
+  font-size: ${props => props.theme.fontSizes.m};
+  font-weight: 500;
   line-height: 1.125;
-  color: rgb(88, 85, 85);
+  color: ${props => props.theme.colors.darkGrey};
   margin: 0;
 `;
 
@@ -73,17 +73,17 @@ export const Stats = styled.li`
 `;
 
 export const Label = styled.span`
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-family: ${props => props.theme.fonts.body};
+  font-size: ${props => props.theme.fontSizes.s};
   font-weight: 200;
   line-height: 1.125;
-  color: rgb(88, 85, 85);
+  color: ${props => props.theme.colors.darkGrey};
   margin: 0;
 `;
 
 export const Quantity = styled.span`
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
+  font-family: ${props => props.theme.fonts.body};
+  font-size: ${props => props.theme.fontSizes.s};
   font-weight: 700;
   line-height: 1.5;
   color: rgb(0, 0, 0);
