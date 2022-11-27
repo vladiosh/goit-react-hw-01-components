@@ -17,10 +17,18 @@ export const HeadCell = styled.th`
   background-color: rgb(90, 163, 211);
   padding: 10px;
   height: 20px;
+  :not(:last-child) {
+    border-right: 1px solid white;
+    border-top-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
 `;
 
 export const TableRow = styled.tr`
   background-color: rgb(255, 255, 255);
+  :nth-child(2n + 1) {
+    background-color: rgb(210, 270, 250);
+  }
 `;
 
 export const TableCell = styled.td`
@@ -35,5 +43,12 @@ export const TableCell = styled.td`
   height: 20px;
   :first-child {
     text-transform: capitalize;
+  }
+
+  :not(:last-child) {
+    border-right: 1px solid white;
+    border-top-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
   }
 `;
