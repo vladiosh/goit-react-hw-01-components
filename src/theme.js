@@ -31,6 +31,8 @@ export const theme = {
     green: 'green',
     white: 'white',
     primaryText: '#000',
+    tableHeaderColor: 'rgb(90, 163, 211)',
+    tableCellColor: 'rgb(210, 270, 250)',
   },
 
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
@@ -52,23 +54,4 @@ export const theme = {
     none: 'none',
     normal: '1px solid',
   },
-
-  // colors: {
-  //   primaryText: '#000',
-  //   secondaryText: 'rgb(134 131 131)',
-  //   backgroundMain: '#fff',
-  //   backgroundBody: 'rgba(110, 160, 163, 0.52)',
-  //   backgroundStat: 'rgba(177, 212, 215, 0.52)',
-  //   background: 'rgba(0, 159, 170, 0.493)',
-  //   accent: 'rgba(37, 40, 239, 0.685)',
-  //   red: '#f00',
-  //   white: 'white',
-  //   green: 'green',
-  //   borderColor: 'rgba(174, 196, 198, 0.52)',
-  // },
-
-  // borders: {
-  //   none: 'none',
-  //   normal: '1px solid',
-  // },
 };

@@ -3,52 +3,52 @@ import styled from 'styled-components';
 export const Table = styled.table`
   margin-right: auto;
   margin-left: auto;
-  border-spacing: 0px;
-  box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+  border-spacing: ${props => props.theme.space[0]}px;
+  box-shadow: ${props => props.theme.shadows.second};
 `;
 
 export const HeadCell = styled.th`
   font-family:  ${props => props.theme.fonts.body};
   font-size:  ${props => props.theme.fontSizes.m};
-  font-weight: 700;
-  color: white;
+  font-weight: ${props => props.theme.fontWeights.bold};
+  color: ${props => props.theme.colors.white};
   text-transform: uppercase;
   text-align: center;
-  background-color: rgb(90, 163, 211);
-  padding: 10px;
+  background-color: ${props => props.theme.colors.tableHeaderColor};
+  padding: ${props => props.theme.space[3]}px;
   height: 20px;
   :not(:last-child) {
-    border-right: 2px solid white;
-    border-top-color: white;
-    border-bottom-color: white;
-    border-left-color: white;
+    border-right: 2px solid ${props => props.theme.colors.white};
+    border-top-color: ${props => props.theme.colors.white};
+    border-bottom-color: ${props => props.theme.colors.white};
+    border-left-color: ${props => props.theme.colors.white};
 `;
 
 export const TableRow = styled.tr`
-  background-color: rgb(255, 255, 255);
+  background-color: ${props => props.theme.colors.white};
   :nth-child(2n + 1) {
-    background-color: rgb(210, 270, 250);
+    background-color: ${props => props.theme.colors.tableCellColor};
   }
 `;
 
 export const TableCell = styled.td`
   font-family: ${props => props.theme.fonts.body};
   font-size: ${props => props.theme.fontSizes.s};
-  font-weight: 400;
-  line-height: 1.5;
-  color: rgb(134, 131, 131);
+  font-weight: ${props => props.theme.fontWeights.body};
+  line-height: ${props => props.theme.lineHeights.body};
+  color: ${props => props.theme.colors.darkGrey};
   min-width: 200px;
   text-align: center;
-  padding: 10px;
+  padding: ${props => props.theme.space[3]}px;
   height: 20px;
   :first-child {
     text-transform: capitalize;
   }
 
   :not(:last-child) {
-    border-right: 2px solid white;
-    border-top-color: white;
-    border-bottom-color: white;
-    border-left-color: white;
+    border-right: 2px solid ${props => props.theme.colors.white};
+    border-top-color: ${props => props.theme.colors.white};
+    border-bottom-color: ${props => props.theme.colors.white};
+    border-left-color: ${props => props.theme.colors.white};
   }
 `;
