@@ -1,27 +1,40 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
-import { Title, List, Item } from './Statistics.styled';
+import {
+  Title,
+  List,
+  Item,
+  Card,
+  Label,
+  Percentage,
+} from './Statistics.styled';
 
 export default function Statistics({ stats, title = null }) {
   return (
-    <section>
+    <Card>
       {title && <Title>{title}</Title>}
 
       <List>
         {stats.map(el => {
           return (
             <Item key={el.id}>
-              <span className="label">{el.label}</span>
-              <span className="percentage">{el.percentage}</span>
+              <Label>{el.label}</Label>
+              <Percentage>{el.percentage}</Percentage>
             </Item>
           );
         })}
       </List>
-    </section>
+    </Card>
   );
 }
 
-// Statistics.propTypes = {
-//   label: PropTypes.string.isRequired,
-//   percentage: PropTypes.number.isRequired,
-// };
+Statistics.propTypes = {
+  stats: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
+  title: PropTypes.string,
+};

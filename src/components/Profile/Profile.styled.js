@@ -4,6 +4,7 @@ export const Card = styled.div`
   background-color: white;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 60px;
 
   width: 300px;
   border-radius: 10px;
