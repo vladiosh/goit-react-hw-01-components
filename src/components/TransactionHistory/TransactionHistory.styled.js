@@ -8,8 +8,8 @@ export const Table = styled.table`
 `;
 
 export const HeadCell = styled.th`
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
+  font-family:  ${props => props.theme.fonts.body};
+  font-size:  ${props => props.theme.fontSizes.m};
   font-weight: 700;
   color: white;
   text-transform: uppercase;
@@ -32,8 +32,8 @@ export const TableRow = styled.tr`
 `;
 
 export const TableCell = styled.td`
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
+  font-family: ${props => props.theme.fonts.body};
+  font-size: ${props => props.theme.fontSizes.s};
   font-weight: 400;
   line-height: 1.5;
   color: rgb(134, 131, 131);
