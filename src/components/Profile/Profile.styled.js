@@ -1,64 +1,62 @@
 import styled from 'styled-components';
 
 export const Card = styled.div`
-  background-color: white;
+  background-color: ${props => props.theme.colors.white};
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px;
-
+  margin-bottom: ${props => props.theme.space[6]}px;
   width: 300px;
-  border-radius: 10px;
-  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
-    rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+  border-radius: ${props => props.theme.radii.second};
+  box-shadow: ${props => props.theme.shadows.first};
 `;
 
 export const Description = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: ${props => props.theme.space[5]}px;
+  padding-bottom: ${props => props.theme.space[5]}px;
 `;
 
 export const UserPhoto = styled.img`
-  margin-bottom: 10px;
+  margin-bottom: ${props => props.theme.space[3]}px;
 `;
 
 export const UserName = styled.p`
   font-family: ${props => props.theme.fonts.heading};
   font-size: ${props => props.theme.fontSizes.l};
-  font-weight: 500;
-  line-height: 1.125;
-  color: rgb(0, 0, 0);
-  margin: 0;
-  margin-bottom: 5px;
+  font-weight: ${props => props.theme.fontWeights.heading};
+  line-height: ${props => props.theme.lineHeights.heading};
+  color: ${props => props.theme.colors.primaryText};
+  margin: ${props => props.theme.space[0]}px;
+  margin-bottom: ${props => props.theme.space[2]}px;
 `;
 
 export const UserTag = styled.p`
-  font-family: 'Roboto', sans-serif;
+  font-family: ${props => props.theme.fonts.body};
   font-size: ${props => props.theme.fontSizes.m};
-  font-weight: 200;
-  line-height: 1.125;
+  font-weight: ${props => props.theme.fontWeights.body};
+  line-height: ${props => props.theme.lineHeights.heading};
   color: ${props => props.theme.colors.darkGrey};
-  margin: 0;
-  margin-bottom: 5px;
+  margin: ${props => props.theme.space[0]}px;
+  margin-bottom: ${props => props.theme.space[2]}px;
 `;
 
 export const UserLocation = styled.p`
   font-family: ${props => props.theme.fonts.body};
   font-size: ${props => props.theme.fontSizes.m};
-  font-weight: 500;
-  line-height: 1.125;
+  font-weight: ${props => props.theme.fontWeights.heading};
+  line-height: ${props => props.theme.lineHeights.heading};
   color: ${props => props.theme.colors.darkGrey};
-  margin: 0;
+  margin: ${props => props.theme.space[0]}px;
 `;
 
 export const StatsList = styled.ul`
-  list-style: none;
   display: flex;
   justify-content: center;
-  border-top: 1px solid rgb(183, 174, 174);
-  background: rgba(177, 212, 215, 0.52);
+  border-top: ${props => props.theme.borders.normal}
+    ${props => props.theme.colors.darkGrey};
+  background: ${props => props.theme.colors.lightGray};
 `;
 
 export const Stats = styled.li`
@@ -66,26 +64,27 @@ export const Stats = styled.li`
   align-items: center;
   flex-direction: column;
   width: 100px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: ${props => props.theme.space[4]}px;
+  padding-bottom: ${props => props.theme.space[4]}px;
   &:not(:last-child) {
-    border-right: 1px solid rgb(183, 174, 174);
+    border-right: ${props => props.theme.borders.normal}
+      ${props => props.theme.colors.darkGrey};
   }
 `;
 
 export const Label = styled.span`
   font-family: ${props => props.theme.fonts.body};
   font-size: ${props => props.theme.fontSizes.s};
-  font-weight: 200;
-  line-height: 1.125;
+  font-weight: ${props => props.theme.fontWeights.body};
+  line-height: ${props => props.theme.lineHeights.heading};
   color: ${props => props.theme.colors.darkGrey};
-  margin: 0;
+  margin: ${props => props.theme.space[0]}px;
 `;
 
 export const Quantity = styled.span`
   font-family: ${props => props.theme.fonts.body};
   font-size: ${props => props.theme.fontSizes.s};
-  font-weight: 700;
-  line-height: 1.5;
-  color: rgb(0, 0, 0);
+  font-weight: ${props => props.theme.fontWeights.bold};
+  line-height: ${props => props.theme.lineHeights.body};
+  color: ${props => props.theme.colors.primaryText};
 `;

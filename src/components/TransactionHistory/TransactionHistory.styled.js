@@ -18,7 +18,7 @@ export const HeadCell = styled.th`
   padding: 10px;
   height: 20px;
   :not(:last-child) {
-    border-right: 1px solid white;
+    border-right: 2px solid white;
     border-top-color: white;
     border-bottom-color: white;
     border-left-color: white;
@@ -46,7 +46,7 @@ export const TableCell = styled.td`
   }
 
   :not(:last-child) {
-    border-right: 1px solid white;
+    border-right: 2px solid white;
     border-top-color: white;
     border-bottom-color: white;
     border-left-color: white;

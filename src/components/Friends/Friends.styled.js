@@ -6,23 +6,23 @@ export const List = styled.ul`
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-bottom: ${props => props.theme.space[6]}px;
+  padding-top: ${props => props.theme.space[5]}px;
+  padding-bottom: ${props => props.theme.space[5]}px;
   width: 300px;
-  background-color: white;
+  background-color: ${props => props.theme.colors.white}; ;
 `;
 
 export const Item = styled.li`
   display: flex;
   align-items: center;
   width: 250px;
-  padding: 8px;
-  background-color: white;
-  box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+  padding: ${props => props.theme.space[3]}px;
+  background-color: ${props => props.theme.colors.white};
+  box-shadow: ${props => props.theme.shadows.second};
   border-radius: 5px;
   &:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: ${props => props.theme.space[3]}px;
   }
 `;
 
@@ -30,20 +30,20 @@ export const Status = styled.span`
   width: 20px;
   height: 20px;
 
-  border-radius: 50%;
+  border-radius: ${props => props.theme.radii.round};
   background-color: ${props =>
     props.isOnline ? props.theme.colors.green : props.theme.colors.red};
-  margin-right: 10px;
+  margin-right: ${props => props.theme.space[3]}px;
 `;
 
 export const Avatar = styled.img`
-  margin-right: 10px;
+  margin-right: ${props => props.theme.space[3]}px;
 `;
 
 export const Name = styled.p`
-  margin: 0;
+  margin: ${props => props.theme.space[0]}px;
   font-family: ${props => props.theme.fonts.body};
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 1.5;
+  font-size: ${props => props.theme.fontSizes.l};
+  font-weight: ${props => props.theme.fontWeights.bold};
+  line-height: ${props => props.theme.lineHeights.body};
 `;
