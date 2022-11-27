@@ -14,7 +14,7 @@ export const theme = {
   colors: {
     darkGrey: 'rgb(88, 85, 85)',
     blue: 'rgb(107, 243, 243)',
-    green: 'green',
     red: 'red',
+    green: 'green',
   },
 };
