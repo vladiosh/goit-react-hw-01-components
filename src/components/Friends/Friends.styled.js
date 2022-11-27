@@ -29,10 +29,11 @@ export const Item = styled.li`
 export const Status = styled.span`
   width: 20px;
   height: 20px;
-  margin-right: 10px;
+
   border-radius: 50%;
   background-color: ${props =>
     props.isOnline ? props.theme.colors.green : props.theme.colors.red};
+  margin-right: 10px;
 `;
 
 export const Avatar = styled.img`
